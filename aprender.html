@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aprender | EqualLearn</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <span class="logo-icon">C</span>
+        <span>Equal<span>Learn</span></span>
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">Início</a>
+        <a href="aprender.html" class="active">Aprender</a>
+        <a href="ensinar.html">Ensinar</a>
+        <a href="banco-horas.html">Banco de Horas</a>
+        <a href="impacto.html">Impacto</a>
+    </nav>
+
+    <a href="perfil.html" class="profile-button">
+        Meu perfil
+    </a>
+
+</header>
+
+
+<main>
+
+<section class="page-header">
+
+    <span class="tag">
+        APRENDER
+    </span>
+
+    <h1>
+        Encontre alguém que possa ajudar.
+    </h1>
+
+    <p>
+        Escolha uma disciplina e encontre tutores disponíveis
+        para compartilhar conhecimento.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="filter-area">
+
+        <div>
+
+            <label for="subjectFilter">
+                Disciplina
+            </label>
+
+            <select id="subjectFilter">
+
+                <option value="all">
+                    Todas
+                </option>
+
+                <option value="matematica">
+                    Matemática
+                </option>
+
+                <option value="portugues">
+                    Língua Portuguesa
+                </option>
+
+                <option value="ingles">
+                    Inglês
+                </option>
+
+                <option value="fisica">
+                    Física
+                </option>
+
+                <option value="quimica">
+                    Química
+                </option>
+
+                <option value="historia">
+                    História
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div>
+
+            <label for="levelFilter">
+                Nível
+            </label>
+
+            <select id="levelFilter">
+
+                <option value="all">
+                    Todos
+                </option>
+
+                <option value="fundamental">
+                    Fundamental
+                </option>
+
+                <option value="medio">
+                    Ensino Médio
+                </option>
+
+                <option value="universitario">
+                    Universitário
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <div class="tutor-grid" id="tutorGrid">
+
+
+        <article
+            class="tutor-card"
+            data-subject="matematica"
+            data-level="medio"
+        >
+
+            <div class="avatar">
+                AM
+            </div>
+
+            <div class="tutor-info">
+
+                <h3>Ana Martins</h3>
+
+                <span class="tutor-type">
+                    Estudante do Ensino Médio
+                </span>
+
+                <p>
+                    Matemática • Álgebra • Geometria
+                </p>
+
+                <span class="availability">
+                    ● Disponível
+                </span>
+
+                <button
+                    class="btn-primary small"
+                    onclick="requestTutor('Ana Martins')"
+                >
+                    Solicitar ajuda
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="tutor-card"
+            data-subject="ingles"
+            data-level="universitario"
+        >
+
+            <div class="avatar">
+                LC
+            </div>
+
+            <div class="tutor-info">
+
+                <h3>Lucas Costa</h3>
+
+                <span class="tutor-type">
+                    Estudante Universitário
+                </span>
+
+                <p>
+                    Inglês • Conversação • Gramática
+                </p>
+
+                <span class="availability">
+                    ● Disponível
+                </span>
+
+                <button
+                    class="btn-primary small"
+                    onclick="requestTutor('Lucas Costa')"
+                >
+                    Solicitar ajuda
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="tutor-card"
+            data-subject="fisica"
+            data-level="medio"
+        >
+
+            <div class="avatar">
+                JP
+            </div>
+
+            <div class="tutor-info">
+
+                <h3>João Pedro</h3>
+
+                <span class="tutor-type">
+                    Estudante do Ensino Médio
+                </span>
+
+                <p>
+                    Física • Mecânica • Cinemática
+                </p>
+
+                <span class="availability">
+                    ● Disponível
+                </span>
+
+                <button
+                    class="btn-primary small"
+                    onclick="requestTutor('João Pedro')"
+                >
+                    Solicitar ajuda
+                </button>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div>
+        <strong>EqualLearn</strong>
+        <p>
+            Educação através da colaboração.
+        </p>
+    </div>
+
+    <p>ODS 10 e 4 • GoIT</p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

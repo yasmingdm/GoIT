@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ensinar | EqualLearn</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <span class="logo-icon">C</span>
+        <span>Equal<span>Learn</span></span>
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">Início</a>
+        <a href="aprender.html">Aprender</a>
+        <a href="ensinar.html" class="active">Ensinar</a>
+        <a href="banco-horas.html">Banco de Horas</a>
+        <a href="impacto.html">Impacto</a>
+    </nav>
+
+    <a href="perfil.html" class="profile-button">
+        Meu perfil
+    </a>
+
+</header>
+
+
+<main>
+
+<section class="page-header">
+
+    <span class="tag">
+        ENSINAR
+    </span>
+
+    <h1>
+        Compartilhe aquilo que você sabe.
+    </h1>
+
+    <p>
+        Seu conhecimento pode fazer diferença na trajetória
+        de outro estudante.
+    </p>
+
+</section>
+
+
+<section class="form-section">
+
+    <div class="form-card">
+
+        <div class="form-title">
+
+            <h2>
+                Quero ser tutor
+            </h2>
+
+            <p>
+                Preencha seus dados para fazer parte
+                da rede EqualLearn.
+            </p>
+
+        </div>
+
+
+        <form id="tutorForm">
+
+            <div class="form-grid">
+
+                <div class="input-group">
+
+                    <label for="name">
+                        Nome completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Seu nome"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="age">
+                        Idade
+                    </label>
+
+                    <input
+                        type="number"
+                        id="age"
+                        placeholder="Sua idade"
+                        min="10"
+                        max="100"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <label>
+                Você é:
+            </label>
+
+            <div class="radio-group">
+
+                <label class="radio-card">
+
+                    <input
+                        type="radio"
+                        name="studentType"
+                        value="escolar"
+                        required
+                    >
+
+                    <span>
+                        <strong>
+                            Estudante Escolar
+                        </strong>
+
+                        <small>
+                            Educação Básica / Ensino Médio
+                        </small>
+                    </span>
+
+                </label>
+
+
+                <label class="radio-card">
+
+                    <input
+                        type="radio"
+                        name="studentType"
+                        value="universitario"
+                    >
+
+                    <span>
+                        <strong>
+                            Estudante Universitário
+                        </strong>
+
+                        <small>
+                            Graduação ou ensino superior
+                        </small>
+
+                    </span>
+
+                </label>
+
+            </div>
+
+
+            <label for="subject">
+                O que você pode ensinar?
+            </label>
+
+            <select id="subject" required>
+
+                <option value="">
+                    Selecione uma disciplina
+                </option>
+
+                <option>
+                    Matemática
+                </option>
+
+                <option>
+                    Língua Portuguesa
+                </option>
+
+                <option>
+                    Inglês
+                </option>
+
+                <option>
+                    Física
+                </option>
+
+                <option>
+                    Química
+                </option>
+
+                <option>
+                    História
+                </option>
+
+                <option>
+                    Geografia
+                </option>
+
+            </select>
+
+
+            <label for="description">
+                Conte um pouco sobre o que você pode ensinar
+            </label>
+
+            <textarea
+                id="description"
+                rows="5"
+                placeholder="Ex.: Posso ajudar com matemática básica, equações e preparação para provas."
+                required
+            ></textarea>
+
+
+            <label for="availability">
+                Quando você pode ajudar?
+            </label>
+
+            <select id="availability" required>
+
+                <option value="">
+                    Selecione
+                </option>
+
+                <option>
+                    Durante a semana
+                </option>
+
+                <option>
+                    Finais de semana
+                </option>
+
+                <option>
+                    Ambos
+                </option>
+
+            </select>
+
+
+            <button
+                type="submit"
+                class="btn-primary full"
+            >
+                Cadastrar como tutor
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div>
+        <strong>EqualLearn</strong>
+        <p>
+            Seu conhecimento pode transformar outra trajetória.
+        </p>
+    </div>
+
+    <p>ODS 10 e 4 • GoIT</p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
