@@ -15,6 +15,7 @@
     --dark-blue: #003b73;
     --blue-light: #a2c0df;
     --background-blue: #3875b3;
+
     /* CORES SECUNDÁRIAS */
 
     --orange: #f28c28;
@@ -75,7 +76,6 @@ body {
 
     font-family: 'Inter', sans-serif;
 
-    
     background: var(--background-blue);
 
     color: var(--dark);
@@ -2610,6 +2610,123 @@ textarea:focus {
     color: var(--blue);
 
     font-weight: 700;
+
+}
+
+
+/* =====================================================
+   OFENSIVA / STREAK
+===================================================== */
+
+.streak-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+
+    border: 2px solid #ff9800;
+
+    border-radius: 12px;
+
+    padding: 12px 20px;
+
+    max-width: 320px;
+
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.15);
+
+}
+
+
+.streak-icon {
+
+    font-size: 2.2rem;
+
+    animation: pulse 1.5s infinite alternate;
+
+}
+
+
+.streak-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.streak-number {
+
+    font-size: 1.6rem;
+
+    font-weight: bold;
+
+    color: #e65100;
+
+    line-height: 1;
+
+}
+
+
+.streak-label {
+
+    font-size: 0.85rem;
+
+    color: #ef6c00;
+
+    font-weight: 600;
+
+}
+
+
+.btn-streak {
+
+    background-color: #ff9800;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+
+    margin-left: auto;
+
+}
+
+
+.btn-streak:hover {
+
+    background-color: #e65100;
+
+}
+
+
+.btn-streak:disabled {
+
+    background-color: #ccc;
+
+    cursor: not-allowed;
+
+}
+
+
+@keyframes pulse {
+
+    from { transform: scale(1); }
+
+    to { transform: scale(1.15); }
 
 }
 
